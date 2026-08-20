@@ -5,9 +5,9 @@ int main(void)
 {
     setlocale(LC_ALL, "korean");
 
-    LPCTSTR pszReportJson = TEXT("d:/report.json"); // 본인 경로에 맞게 수정1
-    LPCTSTR pszReportXml = TEXT("d:/report.xml");   // 본인 경로에 맞게 수정2
-    LPCTSTR pszTargetXml = TEXT("d:/target.xml");   // 본인 경로에 맞게 수정3
+    LPCTSTR pszReportJson = TEXT("C:/Users/ido31/Downloads/시스템 프로그래밍6 - 데이터 정복하기 - 실습/report.json"); 
+    LPCTSTR pszReportXml = TEXT("C:/Users/ido31/Downloads/시스템 프로그래밍6 - 데이터 정복하기 - 실습/report.xml");   
+    LPCTSTR pszTargetXml = TEXT("C:/Users/ido31/Downloads/시스템 프로그래밍6 - 데이터 정복하기 - 실습/target.xml");   
 
     try
     {
