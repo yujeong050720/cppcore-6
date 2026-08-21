@@ -1,15 +1,5 @@
 #pragma once
 
-struct ST_DESC_INTERNATIONAL : public core::IFormatterObject
-{
-    std::tstring koKR;
-
-    void OnSync(core::IFormatter& formatter)
-    {
-        formatter.Sync(TEXT("ko-KR"), koKR);
-    }
-};
-
 struct ST_SUMMARY : public core::IFormatterObject
 {
     std::tstring strResult;
@@ -89,7 +79,7 @@ struct ST_DETECTION_EVENT : public core::IFormatterObject
     std::tstring strAnalysisCode;
     int nSeverity = 0;
     std::tstring strDesc;
-    ST_DESC_INTERNATIONAL DescInternational;
+    std::map<std::tstring, std::tstring> DescInternational;
 
     void OnSync(core::IFormatter& formatter)
     {
